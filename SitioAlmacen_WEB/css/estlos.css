@@ -1,0 +1,7 @@
+.open>.dropdown-menu {
+    display: contents;
+}
+
+.col-md-3{
+	height:-webkit-fill-available;
+}

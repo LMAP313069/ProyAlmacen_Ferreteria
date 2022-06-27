@@ -1,0 +1,88 @@
+.tituloForm{ font-family: Verdana; font-size: 12pt; 
+font-weight: bold; color: #b22020;}
+
+.labelTitulo{font-family: Verdana; font-size: 8pt;
+font-weight: bold;}
+
+.boton{font-family: Verdana; font-size: 8pt;}
+
+.labelErrores{font-family: Verdana; font-size: 8pt; font-weight: normal;
+color: #FF0000;}
+
+.TextBox{font-family: Verdana; font-size: 8pt; height:12pt;}
+
+.DropDownList{ font-family: Verdana; font-size: 8pt; }
+
+.labelContenido{font-family: Verdana; font-size: 10pt; color: #993366;
+    }
+
+.GriedView{font-family: Verdana; font-size: 8pt;}
+
+.Imagen {box-shadow: 9px 9px 6px #888; 
+         border-radius: 5px 10px;
+         -moz-border-radius: 5px 10px;
+         -webkit-border-radius: 5px 10px;}
+
+/*Clase para cuadro de dialogo*/
+ .CajaDialogo
+    {
+        background-color: #99ffcc;
+        border-width: 4px;
+        border-style: outset;
+        border-color: Yellow;
+        padding: 0px;
+        width: 200px;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .CajaDialogo div
+    {
+        margin: 5px;
+        text-align: center;
+    }
+
+/*FondoAplicacion para el Popup*/
+.FondoAplicacion
+    {
+        background-color: Gray;
+        filter: alpha(opacity=70);
+        opacity: 0.7;
+    }
+
+/*Clase para candelario*/
+/*.calendario .ajax__calendar_container
+{
+    width:200px;
+    border: 1px solid #646464;
+	background-color: black;
+	color: black ;
+	line-height: normal;
+}
+.calendario .ajax__calendar_body 
+{
+    width:200px;
+    border: 1px solid #646464;
+	background-color: green;
+	color: red;
+	line-height: normal;
+}*/
+
+.calendario .ajax__calendar_active .ajax__calendar_day,
+.calendario .ajax__calendar_active .ajax__calendar_month,
+.calendario .ajax__calendar_active .ajax__calendar_year 
+{
+    color: red;
+    background-color: green ;
+    font-weight:bold;
+}
+
+/*.calendario .ajax__calendar_other .ajax__calendar_day,
+.calendario .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+.calendario .ajax__calendar_hover .ajax__calendar_day,
+.calendario .ajax__calendar_hover .ajax__calendar_month,
+.calendario .ajax__calendar_hover .ajax__calendar_year {
+    color: black;
+}*/
+

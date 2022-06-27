@@ -1,0 +1,82 @@
+﻿ #Background
+    {
+        position: fixed; 
+        top: 0px; 
+        bottom: 0px; 
+        left: 0px; 
+        right: 0px; 
+        overflow: hidden; 
+        padding: 0; 
+        margin: 0; 
+        background-color: #F0F0F0; 
+        filter: alpha(opacity=80); 
+        opacity: 0.8; 
+        z-index: 100000;
+    }
+        
+    #Progress
+    {
+        position: fixed;
+        top: 40%; 
+        left: 40%; 
+        height:20%; 
+        width:20%; 
+        z-index: 100001;  
+        background-color: #FFFFFF; 
+        border:1px solid Gray; 
+        background-image: url('../images/loading.gif') ; 
+        background-repeat: no-repeat; 
+        background-position:center;
+    }
+      .CajaDialogo 
+        { 
+            background-color:beige  ; 
+            border-width: 4px; 
+            border-style: outset; 
+            border-color:whitesmoke ; 
+            padding: 0px; 
+            width: 500px; 
+            font-weight: bold; 
+            font-style: italic; 
+        } 
+        .CajaDialogo div 
+        { 
+            margin: 7px; 
+            text-align: center; 
+        } 
+        .FondoAplicacion 
+        { 
+            background-color: Gray; 
+            filter: alpha(opacity=70); 
+            opacity: 0.7; 
+        } 
+         .overlay  
+        {
+          position: fixed;
+          z-index: 98;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+            background-color: #aaa; 
+            filter: alpha(opacity=80); 
+            opacity: 0.8; 
+        }
+        .overlayContent
+        {
+          z-index: 99;
+          margin: 250px auto;
+          width: 80px;
+          height: 80px;
+        }
+        .overlayContent h2
+        {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+        .overlayContent img
+        {
+          width: 200px;
+          height: 20px;
+        }

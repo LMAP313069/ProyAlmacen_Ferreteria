@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Almacen Ferreteria</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">    
+    <link href="css/estlos.css" rel="stylesheet"> 
+    <link href="css/bootstrap.mini.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilosMain.css" media="screen"/>
+        <link href="Content/MessageBox.css" rel="stylesheet" type="text/css" />
+    <link href="Content/Progress.css" rel="stylesheet" type="text/css" />
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  
+
+
+<%--        <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">   
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Mantenimiento<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+      
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>--%>
+
+        <header>
+     
+        <div id = cabeza>
+            <div id="detalle"><h2>Bienvenido</h2></div>
+
+        </div>
+
+        <div id="nav">
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="FrmMain.jsp" class="active">Inicio</a></li>
+                    <li><a href="#">Consultas</a>
+                        <ul class="submenu">
+                            <li><a href="FrmAlumnoBusqueda.jsp" target="principal">Pedidos</a></li>
+                            <li><a href="FrmLibroBusquedaCodigo.jsp" target="principal">Orden Salida</a></li>
+                            <li><a href="FrmAutorBusqueda.jsp" target="principal">Productos</a></li>
+                            <li><a href="FrmEmpleadoBusqueda.jsp" target="principal">Empleado</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="#">Mantenimiento</a>
+                        <ul class="submenu">
+                            <li><a href="#">Empleado</a></li>
+                            <li><a href="FrmLibroMantenimiento">Producto</a></li>
+                            <li><a href="FrmAutorMantenimiento.jsp" target="principal">Proveedor</a></li>
+                            <li><a href="FrmEmpleadoMantenimiento.jsp" target="principal">Pedido</a></li>
+                        </ul>
+                    </li>
+      
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+       <div class="container-fluid">
+      <div class="row" id="Principal"> 
+
+        <!---Primera Fila de Menu-->
+
+    <%--    <div class="col-md-2">
+        <ul class="nav  nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">Inicio</a></li>
+         <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mantenimientos <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Empleado</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Proveedor</a></li>
+              <li role="separator" class="divider"></li>
+                <li><a href="#">Proveedor</a></li>
+                 <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Consultas <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Producto</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Proveedor</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Pedidos</a></li>
+          </ul>
+        </li>
+
+
+          </div>--%>
+
+
+
+  
+
+    <form id="form1" runat="server">
+
+
+ <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True">
+
+
+ </asp:ScriptManager>
+
+        
+  
+
+       <div class="col-md-10" style="margin:150px 300px;">
+        <asp:ContentPlaceHolder id="MainContent" runat="server" >
+        
+
+   
+
+             <center>
+    
+                <iframe name="principal" width="900px" height="500" src="" frameborder="0" align="center" style="border: solid 1px black; z-index:100"></iframe>
+           </center>
+        
+
+   
+
+        </asp:ContentPlaceHolder>
+    </div>
+
+    </div>
+
+
+                   <script>
+        function Yes() {
+            document.getElementById("wholePage").style.display = "none";
+            document.getElementById("messageBox").style.display = "none";
+            //javascript: location.reload();
+        };
+
+        $("ul li").click(function () {
+            $(this).css("color", "blue");
+        });
+    </script>  
+
+
+
+
+    </form>
+  
+           
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyAlmacen_ADO", "ProyAlmacen_ADO\ProyAlmacen_ADO.csproj", "{17399531-303D-4C3B-ADCE-86F34C46CE82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyAlmacen_BE", "ProyAlmacen_BE\ProyAlmacen_BE.csproj", "{F60D2D4D-9E12-4A9F-AE06-A86CC8ED578B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyAlmacen_BL", "ProyAlmacen_BL\ProyAlmacen_BL.csproj", "{9BA642B4-192D-4E1D-82C4-2E434F4BF453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyAlmacen_GUI", "ProyAlmacen_GUI\ProyAlmacen_GUI.csproj", "{0990EF27-AD11-4D4D-BE24-524F9540143C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SitioAlmacen_WEB", "SitioAlmacen_WEB\", "{CCB040DB-9BA6-4764-9DDE-975CD7CC4878}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{f60d2d4d-9e12-4a9f-ae06-a86cc8ed578b}|ProyAlmacen_BE.dll;{9ba642b4-192d-4e1d-82c4-2e434f4bf453}|ProyAlmacen_BL.dll;{17399531-303D-4C3B-ADCE-86F34C46CE82}|ProyAlmacen_ADO.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49691"
+		Debug.AspNetCompiler.PhysicalPath = "SitioAlmacen_WEB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49691\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49691"
+		Release.AspNetCompiler.PhysicalPath = "SitioAlmacen_WEB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49691\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49691"
+		SlnRelativePath = "SitioAlmacen_WEB\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17399531-303D-4C3B-ADCE-86F34C46CE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17399531-303D-4C3B-ADCE-86F34C46CE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17399531-303D-4C3B-ADCE-86F34C46CE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17399531-303D-4C3B-ADCE-86F34C46CE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F60D2D4D-9E12-4A9F-AE06-A86CC8ED578B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60D2D4D-9E12-4A9F-AE06-A86CC8ED578B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60D2D4D-9E12-4A9F-AE06-A86CC8ED578B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60D2D4D-9E12-4A9F-AE06-A86CC8ED578B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA642B4-192D-4E1D-82C4-2E434F4BF453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA642B4-192D-4E1D-82C4-2E434F4BF453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA642B4-192D-4E1D-82C4-2E434F4BF453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA642B4-192D-4E1D-82C4-2E434F4BF453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0990EF27-AD11-4D4D-BE24-524F9540143C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0990EF27-AD11-4D4D-BE24-524F9540143C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0990EF27-AD11-4D4D-BE24-524F9540143C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0990EF27-AD11-4D4D-BE24-524F9540143C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB040DB-9BA6-4764-9DDE-975CD7CC4878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB040DB-9BA6-4764-9DDE-975CD7CC4878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB040DB-9BA6-4764-9DDE-975CD7CC4878}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB040DB-9BA6-4764-9DDE-975CD7CC4878}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55D5C0E9-EF45-45B6-A776-ACDE0A720220}
+	EndGlobalSection
+EndGlobal
